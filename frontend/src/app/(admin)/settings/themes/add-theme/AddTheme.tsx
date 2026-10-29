@@ -1,0 +1,88 @@
+"use client";
+import { useRouter } from "next/navigation";
+import React from "react";
+import { Button, Card, Col, Form, Row } from "react-bootstrap";
+import { useCreateThemeMutation } from "../../../../../store/services/settings/themes/themeApi";
+import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+
+const AddTheme = () => {
+  const router = useRouter();
+  const [createTheme, { isLoading }] = useCreateThemeMutation();
+  const { register, handleSubmit } = useForm({
+    defaultValues: { title: "", status: "Active", enabled: "true" },
+  });
+
+  const onSubmit = async (formData: any) => {
+    try {
+      await createTheme({
+        title: formData.title,
+        status: formData.status,
+        enabled: formData.enabled === "true",
+      }).unwrap();
+      toast.success("Theme created successfully");
+      router.push("/settings/themes");
+    } catch (err) {
+      const message =
+        err && typeof err === "object" && "data" in err
+          ? (err as { data?: { message?: string } }).data?.message
+          : undefined;
+      toast.error(message || "Failed to create theme. Please try again.");
+    }
+  };
+
+  return (
+    <div>
+      <Card className="p-3">
+        <Form onSubmit={handleSubmit(onSubmit)}>
+          <Row>
+            <Col md={4}>
+              <Form.Label className="text-primary small" style={{ fontSize: "10px" }}>
+                Theme Name *
+              </Form.Label>
+              <Form.Control
+                size="sm"
+                placeholder="Enter theme name"
+                style={{ fontSize: "10px" }}
+                {...register("title", { required: true })}
+              />
+            </Col>
+            <Col md={4}>
+              <Form.Label className="text-primary small" style={{ fontSize: "10px" }}>
+                Status *
+              </Form.Label>
+              <Form.Select size="sm" style={{ fontSize: "10px" }} {...register("status")}>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+              </Form.Select>
+            </Col>
+            <Col md={4}>
+              <Form.Label className="text-primary small" style={{ fontSize: "10px" }}>
+                Enabled *
+              </Form.Label>
+              <Form.Select style={{ fontSize: "10px" }} size="sm" {...register("enabled")}>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+              </Form.Select>
+            </Col>
+          </Row>
+          <div className="d-flex gap-2 justify-content-end mt-3">
+            <Button
+              variant="outline-danger"
+              size="sm"
+              onClick={() => router.push("/settings/themes")}
+              style={{ fontSize: "10px" }}
+            >
+              Cancel
+            </Button>
+            <Button variant="success" size="sm" style={{ fontSize: "10px" }} type="submit">
+              {isLoading ? "Submitting..." : "Submit"}
+            </Button>
+          </div>
+        </Form>
+      </Card>
+    </div>
+  );
+};
+
+export default AddTheme;

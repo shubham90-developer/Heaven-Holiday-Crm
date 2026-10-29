@@ -1,0 +1,135 @@
+.package-search-result {
+  .psr-breadcrumb {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+
+    a {
+      color: #666;
+      text-decoration: none;
+
+      &:hover {
+        color: #333;
+      }
+    }
+
+    .psr-breadcrumb-active {
+      color: #f58220;
+      font-weight: 600;
+    }
+  }
+
+  .psr-summary-bar {
+    border: 1px solid #d9dee8;
+    background: #fff;
+    padding: 12px 16px;
+    margin-bottom: 0;
+
+    .psr-summary-item {
+      font-size: 12px;
+      color: #333;
+
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .psr-modify-search-btn {
+    border: 1px solid #333;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    white-space: nowrap;
+
+    &:hover {
+      background: #f8f9fa;
+      color: #333;
+    }
+  }
+
+  .psr-filter-bar {
+    background: #eef2f7;
+    border: 1px solid #d9dee8;
+    border-top: none;
+    padding: 10px 16px;
+    margin-bottom: 12px;
+  }
+
+  .psr-filter-select {
+    font-size: 11px;
+    width: auto;
+    min-width: 110px;
+    padding: 3px 8px;
+    height: auto;
+    border-color: #ccc;
+  }
+
+  .psr-go-btn {
+    font-size: 11px;
+    padding: 3px 14px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+
+    &:hover {
+      background: #f8f9fa;
+    }
+  }
+
+  .psr-sort-btn {
+    font-size: 11px;
+    padding: 2px 10px;
+    border: 1px solid #0066cc;
+    background: #fff;
+    color: #0066cc;
+    font-weight: 600;
+
+    &.active {
+      background: #0066cc;
+      color: #fff;
+    }
+
+    &:hover {
+      background: #e8f0fe;
+      color: #0066cc;
+    }
+
+    &.active:hover {
+      background: #005bb5;
+      color: #fff;
+    }
+  }
+
+  .psr-results-area {
+    border: 1px solid #d9dee8;
+    background: #fff;
+    min-height: 400px;
+    padding: 16px;
+  }
+
+  .psr-action-btn {
+    display: block;
+    width: 100%;
+    border: 1px solid #f58220;
+    background: #fff;
+    color: #f58220;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      background: #fff8f0;
+      color: #e8740f;
+      border-color: #e8740f;
+    }
+  }
+}

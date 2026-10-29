@@ -1,0 +1,122 @@
+.pageCard {
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+}
+
+.tabBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tabList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tabBtn {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 7px 12px;
+  border: 1px solid var(--bs-primary, #2563eb);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--bs-primary, #2563eb);
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+
+  &:hover {
+    background: rgba(37, 99, 235, 0.08);
+  }
+}
+
+.tabBtnActive {
+  background: var(--bs-primary, #2563eb);
+  color: #fff;
+
+  &:hover {
+    background: var(--bs-primary, #2563eb);
+  }
+}
+
+.addBtn {
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.table {
+  th {
+    font-size: 12px;
+    font-weight: 700;
+    color: #111827;
+    background: #f9fafb;
+    padding: 12px 8px;
+  }
+
+  td {
+    font-size: 13px;
+    padding: 12px 8px;
+    color: #1f2937;
+  }
+}
+
+.removeBtn {
+  border: 0;
+  background: transparent;
+  color: #1f2937;
+  padding: 0;
+  line-height: 1;
+
+  &:hover {
+    color: #dc2626;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.pageBtn {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 13px;
+  color: #374151;
+}
+
+.pageBtnActive {
+  background: var(--bs-primary, #2563eb);
+  border-color: var(--bs-primary, #2563eb);
+  color: #fff;
+}
+
+/* ---- Add form pages ---- */
+
+.formCard {
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+}
+
+.formHeader {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--bs-primary, #2563eb);
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.req {
+  color: #dc2626;
+}

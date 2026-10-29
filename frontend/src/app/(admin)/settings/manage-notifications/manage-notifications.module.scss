@@ -1,0 +1,115 @@
+.card {
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+}
+
+.cardHeader {
+  background: transparent;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.optionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px 32px;
+
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.optionItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #1f2937;
+  cursor: pointer;
+  margin: 0;
+
+  &:hover {
+    background: #f3f4f6;
+  }
+
+  input {
+    margin: 0;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+}
+
+.paxTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tableWrap {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table {
+  margin: 0;
+  width: 100%;
+  table-layout: fixed;
+
+  th,
+  td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 11px;
+    padding: 6px 8px;
+    border-color: #e5e7eb;
+  }
+
+  thead th {
+    background: #f9fafb;
+    font-weight: 700;
+    color: #374151;
+    white-space: nowrap;
+  }
+
+  .subHead th {
+    font-size: 10px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  td.fieldName {
+    text-align: left;
+    font-weight: 500;
+    color: #1f2937;
+    width: 28%;
+  }
+
+  tbody tr:hover {
+    background: #f9fafb;
+  }
+
+  input[type="checkbox"] {
+    cursor: pointer;
+    margin: 0;
+  }
+}
+
+.na {
+  color: #d1d5db;
+}

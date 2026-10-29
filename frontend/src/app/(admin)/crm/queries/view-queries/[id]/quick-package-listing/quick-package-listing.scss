@@ -1,0 +1,181 @@
+.quick-package-listing {
+  .qpl-breadcrumb {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+
+    a {
+      color: #666;
+      text-decoration: none;
+
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+
+  .qpl-filter-card {
+    border: 1px solid #d9dee8;
+    background: #fff;
+    margin-bottom: 12px;
+  }
+
+  .qpl-filter-header {
+    background: #eef2f7;
+    border-bottom: 1px solid #d9dee8;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .qpl-filter-body {
+    padding: 20px 14px 14px;
+  }
+
+  .qpl-field-group {
+    position: relative;
+    margin-bottom: 0;
+
+    .qpl-field-label {
+      position: absolute;
+      top: -8px;
+      left: 10px;
+      background: #fff;
+      padding: 0 4px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #555;
+      z-index: 1;
+    }
+
+    .qpl-field-input {
+      font-size: 12px;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      width: 100%;
+      background: #fff;
+    }
+  }
+
+  .qpl-reset-btn {
+    border: 1px solid #f58220;
+    background: #fff;
+    color: #f58220;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 20px;
+
+    &:hover {
+      background: #fff8f0;
+      color: #e8740f;
+    }
+  }
+
+  .qpl-search-btn {
+    background: #f58220;
+    border: 1px solid #e8740f;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    &:hover {
+      background: #e8740f;
+      color: #fff;
+    }
+  }
+
+  .qpl-table-card {
+    border: 1px solid #d9dee8;
+    background: #fff;
+    padding: 12px;
+  }
+
+  .qpl-top-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .qpl-outline-btn {
+    border: 1px solid #333;
+    background: #fff;
+    color: #333;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 14px;
+
+    &:hover {
+      background: #f8f9fa;
+      color: #333;
+    }
+  }
+
+  .qpl-table {
+    width: 100%;
+    font-size: 11px;
+    margin-bottom: 0;
+
+    thead th {
+      background: #eef2f7;
+      font-weight: 600;
+      color: #333;
+      padding: 10px 8px;
+      border: 1px solid #d9dee8;
+      white-space: nowrap;
+      font-size: 11px;
+    }
+
+    tbody td {
+      padding: 10px 8px;
+      border: 1px solid #eef1f6;
+      color: #333;
+      vertical-align: middle;
+    }
+
+    tbody tr:hover {
+      background: #fafbfc;
+    }
+  }
+
+  .qpl-view-btn {
+    border: none;
+    background: transparent;
+    color: #0066cc;
+    padding: 0;
+    line-height: 1;
+
+    &:hover {
+      color: #005bb5;
+    }
+  }
+
+  .qpl-pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+    gap: 4px;
+
+    .qpl-page-btn {
+      width: 28px;
+      height: 28px;
+      border: 1px solid #0066cc;
+      background: #0066cc;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

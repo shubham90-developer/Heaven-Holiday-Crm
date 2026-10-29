@@ -1,0 +1,508 @@
+.enquiry-supplier-package {
+  .esp-breadcrumb {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+
+    a {
+      color: #666;
+      text-decoration: none;
+
+      &:hover {
+        color: #333;
+      }
+    }
+
+    .esp-breadcrumb-active {
+      color: #f58220;
+      font-weight: 600;
+    }
+  }
+
+  .esp-summary-card {
+    border: 1px solid #d9dee8;
+    background: #fff;
+    margin-bottom: 12px;
+  }
+
+  .esp-summary-row {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eef1f6;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .esp-summary-cell {
+    flex: 1;
+    min-width: 140px;
+    padding: 10px 14px;
+    border-right: 1px solid #eef1f6;
+    font-size: 12px;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    .label {
+      font-size: 11px;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 2px;
+    }
+
+    .value {
+      font-weight: 600;
+      color: #333;
+    }
+  }
+
+  .esp-enquiry-details-header {
+    background: #eef2f7;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #d9dee8;
+  }
+
+  .esp-main-card {
+    border: 1px solid #d9dee8;
+    background: #fff;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+
+  .esp-field-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  .esp-field-input {
+    font-size: 12px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 100%;
+  }
+
+  .esp-supplier-panel {
+    border: 1px solid #d9dee8;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .esp-supplier-search {
+    padding: 12px;
+    border-bottom: 1px solid #eef1f6;
+    display: flex;
+    gap: 8px;
+
+    .esp-search-input {
+      flex: 1;
+      font-size: 12px;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+    }
+
+    .esp-filter-btn {
+      border: 1px solid #333;
+      background: #fff;
+      color: #333;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 16px;
+      white-space: nowrap;
+
+      &:hover {
+        background: #f8f9fa;
+      }
+    }
+  }
+
+  .esp-supplier-list {
+    padding: 12px;
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .esp-supplier-item {
+    border: 1px solid #eef1f6;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 11px;
+
+    .supplier-name {
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .supplier-meta {
+      color: #666;
+      margin-bottom: 2px;
+    }
+
+    .supplier-contact {
+      color: #0066cc;
+    }
+  }
+
+  .esp-add-supplier-btn {
+    margin: 12px;
+    border: 1px solid #333;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 16px;
+    align-self: flex-start;
+
+    &:hover {
+      background: #f8f9fa;
+    }
+  }
+
+  .esp-quill {
+    .ql-toolbar {
+      border-color: #d9dee8;
+      background: #fafafa;
+    }
+
+    .ql-container {
+      border-color: #d9dee8;
+      min-height: 320px;
+      font-size: 12px;
+    }
+  }
+
+  .esp-compose {
+    border: 1px solid #d9dee8;
+    background: #fff;
+
+    .ql-toolbar {
+      border: none;
+      border-bottom: 1px solid #d9dee8;
+      background: #fafafa;
+    }
+
+    .ql-container {
+      border: none;
+      min-height: 78px;
+      font-size: 13px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .ql-editor {
+      min-height: 78px;
+      padding: 12px 15px 8px;
+      color: #333;
+      line-height: 1.45;
+    }
+
+    .esp-compose-table {
+      padding: 0 15px 8px;
+
+      table,
+      .esp-editable-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        table-layout: fixed;
+      }
+
+      td {
+        border: 1px solid #c8c8c8;
+        padding: 6px 8px;
+        font-size: 13px;
+        color: #333;
+        vertical-align: middle;
+      }
+
+      .esp-cell-label {
+        font-weight: 700;
+        width: 16%;
+        white-space: nowrap;
+      }
+
+      .esp-cell-section {
+        font-weight: 700;
+        background: #f3f3f3;
+      }
+
+      .esp-cell-input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+        line-height: 1.4;
+        box-shadow: none;
+        border-radius: 0;
+
+        &:focus {
+          background: #fffdf5;
+        }
+      }
+
+      .esp-cell-textarea {
+        resize: none;
+        min-height: 36px;
+        overflow: hidden;
+      }
+    }
+
+    .esp-compose-closing {
+      .ql-toolbar {
+        display: none;
+      }
+
+      .ql-container {
+        min-height: 90px;
+      }
+
+      .ql-editor {
+        min-height: 90px;
+        padding: 4px 15px 14px;
+      }
+    }
+  }
+
+  .esp-footer-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .esp-empty-suppliers {
+    font-size: 12px;
+    color: #777;
+    padding: 8px 0;
+  }
+}
+
+.esp-whatsapp-btn {
+  background: #25d366;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 18px;
+
+  &:hover {
+    background: #1ebe57;
+    color: #fff;
+  }
+}
+
+.esp-wa-modal {
+  border-radius: 8px;
+  overflow: hidden;
+
+  .esp-wa-header {
+    background: #25d366;
+    color: #fff;
+    border-bottom: none;
+    padding: 12px 16px;
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .btn-close {
+      filter: invert(1);
+    }
+  }
+
+  .esp-wa-body {
+    background-color: #ece5dd;
+    background-repeat: repeat;
+    background-size: 420px auto;
+    min-height: 420px;
+    max-height: 62vh;
+    overflow-y: auto;
+    padding: 20px 22px;
+  }
+
+  .esp-wa-preview {
+    background: transparent;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.55;
+    color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .esp-wa-footer {
+    background: #f3f3f3;
+    border-top: 1px solid #e5e5e5;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+
+  .esp-wa-copy-btn {
+    background: #25d366;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+      background: #1ebe57;
+      color: #fff;
+    }
+  }
+
+  .esp-wa-close-btn {
+    background: #e9ecef;
+    border: none;
+    color: #222;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+
+    &:hover {
+      background: #dde1e5;
+    }
+  }
+}
+
+.esp-preview-btn {
+  border: 1px solid #f58220;
+  background: #fff;
+  color: #f58220;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 18px;
+
+  &:hover {
+    background: #fff8f0;
+  }
+}
+
+.esp-send-btn {
+  background: #f58220;
+  border: 1px solid #e8740f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 18px;
+
+  &:hover {
+    background: #e8740f;
+    color: #fff;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.esp-modal-header {
+  background: #1e3a5f;
+  color: #fff;
+
+  .modal-title {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .btn-close {
+    filter: invert(1);
+  }
+}
+
+.esp-modal-hint {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.esp-service-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+.esp-whatsapp-text {
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.esp-email-preview {
+  border: 1px solid #d9dee8;
+  background: #fff;
+}
+
+.esp-email-meta {
+  background: #f4f6f9;
+  border-bottom: 1px solid #d9dee8;
+  padding: 10px 14px;
+
+  div {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    span {
+      min-width: 70px;
+      color: #666;
+      font-weight: 600;
+    }
+
+    strong {
+      color: #222;
+      font-weight: 600;
+    }
+  }
+}
+
+.esp-email-body {
+  padding: 16px;
+  font-size: 13px;
+  color: #333;
+  min-height: 220px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.45;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 14px;
+    font-size: 13px;
+    background: #fff;
+  }
+
+  td {
+    border: 1px solid #c8c8c8;
+    padding: 8px 10px;
+    vertical-align: top;
+  }
+}

@@ -1,0 +1,466 @@
+.query-listing-page {
+  --ql-orange: #f39c12;
+  --ql-orange-dark: #d68910;
+  --ql-blue: #188ae2;
+  --ql-blue-dark: #1274c0;
+  --ql-hot: #e74c3c;
+  --ql-warm: #f39c12;
+  --ql-cold: #f1c40f;
+  --ql-nostatus: #2c3e50;
+
+  .ql-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .ql-assign-select {
+    font-size: 12px;
+    min-width: 150px;
+  }
+
+  .ql-assign-btn {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: var(--ql-blue) !important;
+    border-color: var(--ql-blue) !important;
+    background: #fff !important;
+  }
+
+  .ql-assign-btn:hover {
+    background: #e8f4fc !important;
+  }
+
+  .ql-btn-orange-outline {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: var(--ql-orange) !important;
+    border: 1px solid var(--ql-orange) !important;
+    background: #fff !important;
+  }
+
+  .ql-btn-orange-outline:hover {
+    background: #fff8ee !important;
+    color: var(--ql-orange-dark) !important;
+  }
+
+  .ql-btn-orange {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    background: var(--ql-orange) !important;
+    border-color: var(--ql-orange) !important;
+    color: #fff !important;
+  }
+
+  .ql-btn-orange:hover {
+    background: var(--ql-orange-dark) !important;
+    border-color: var(--ql-orange-dark) !important;
+  }
+
+  .ql-icon-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d9e2ec;
+    background: #fff;
+    color: var(--ql-blue);
+    border-radius: 4px;
+  }
+
+  .ql-icon-btn:hover {
+    background: #e8f4fc;
+    color: var(--ql-blue-dark);
+  }
+
+  .ql-icon-excel {
+    color: #1d6f42;
+  }
+
+  .ql-quality-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .ql-quality-btns {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .ql-quality-tab {
+    background: none;
+    border: none;
+    padding: 4px 2px 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4a5568;
+    border-bottom: 3px solid transparent;
+    line-height: 1.2;
+    cursor: pointer;
+  }
+
+  .ql-quality-tab:hover {
+    color: #1a202c;
+  }
+
+  .ql-quality-archive {
+    border: 1px solid #c5d0dc;
+    border-radius: 3px;
+    padding: 4px 10px;
+    background: #fff;
+    border-bottom: 1px solid #c5d0dc;
+  }
+
+  .ql-quality-archive.is-active {
+    background: #edf2f7;
+    color: #2d3748;
+  }
+
+  .ql-quality-hot {
+    border-bottom-color: var(--ql-hot);
+  }
+
+  .ql-quality-warm {
+    border-bottom-color: var(--ql-warm);
+  }
+
+  .ql-quality-cold {
+    border-bottom-color: var(--ql-cold);
+  }
+
+  .ql-quality-no_status {
+    border-bottom-color: var(--ql-nostatus);
+  }
+
+  .ql-quality-tab.is-active {
+    color: #1a202c;
+    font-weight: 700;
+  }
+
+  .ql-record-count {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+    color: #2d3748;
+  }
+
+  .ql-search {
+    max-width: 220px;
+    font-size: 12px;
+  }
+
+  .ql-status-tabs {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .ql-status-tab {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: var(--ql-blue) !important;
+    border: 1px solid var(--ql-blue) !important;
+    background: #fff !important;
+    padding: 4px 10px !important;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .ql-status-tab:hover {
+    background: #e8f4fc !important;
+  }
+
+  .ql-status-tab.is-active {
+    background: var(--ql-blue) !important;
+    color: #fff !important;
+  }
+
+  .query-listing-wrap {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .query-listing-table {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 0;
+    border-color: #d7e3f0;
+
+    th,
+    td {
+      font-size: 12px;
+      line-height: 1.35;
+      padding: 7px 6px;
+      vertical-align: top;
+      overflow: hidden;
+      word-break: break-word;
+      border-color: #d7e3f0;
+    }
+
+    th {
+      white-space: normal;
+      font-size: 11px;
+      font-weight: 700;
+      color: #1e4b8e;
+      background: #e8f3fb;
+      vertical-align: middle;
+    }
+
+    .ql-check {
+      width: 3%;
+    }
+
+    .ql-date {
+      width: 10%;
+    }
+
+    .ql-customer {
+      width: 15%;
+    }
+
+    .ql-pax {
+      width: 8%;
+    }
+
+    .ql-desc {
+      width: 8%;
+    }
+
+    .ql-travel {
+      width: 7%;
+    }
+
+    .ql-dest {
+      width: 10%;
+    }
+
+    .ql-proposal {
+      width: 8%;
+    }
+
+    .ql-stage {
+      width: 15%;
+    }
+
+    .ql-updated {
+      width: 6%;
+    }
+
+    .ql-owner {
+      width: 6%;
+    }
+
+    .ql-action {
+      width: 4%;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 6px;
+    }
+  }
+
+  .ql-row-hot td:first-child {
+    box-shadow: inset 3px 0 0 var(--ql-hot);
+  }
+
+  .ql-row-warm td:first-child {
+    box-shadow: inset 3px 0 0 var(--ql-warm);
+  }
+
+  .ql-row-cold td:first-child {
+    box-shadow: inset 3px 0 0 var(--ql-cold);
+  }
+
+  .ql-row-no_status td:first-child,
+  .ql-row-archive td:first-child {
+    box-shadow: inset 3px 0 0 var(--ql-nostatus);
+  }
+
+  .ql-muted {
+    color: #718096;
+    font-size: 11px;
+  }
+
+  .ql-stage-select {
+    width: 100%;
+    max-width: 100%;
+    font-size: 12px;
+    min-height: 30px;
+    margin-bottom: 6px;
+    border-color: #c5d4ea;
+  }
+
+  .ql-stage-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .ql-btn-followup,
+  .ql-btn-touch,
+  .ql-btn-calls {
+    width: auto;
+    flex: 0 0 auto;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    padding: 3px 8px !important;
+    min-height: 24px;
+    border-radius: 3px !important;
+    white-space: nowrap;
+  }
+
+  .ql-btn-followup {
+    background: var(--ql-orange) !important;
+    border: 1px solid var(--ql-orange) !important;
+    color: #fff !important;
+  }
+
+  .ql-btn-followup:hover {
+    background: var(--ql-orange-dark) !important;
+    border-color: var(--ql-orange-dark) !important;
+  }
+
+  .ql-btn-touch {
+    background: #fff !important;
+    border: 1px solid var(--ql-orange) !important;
+    color: var(--ql-orange) !important;
+  }
+
+  .ql-btn-touch:hover {
+    background: #fff8ee !important;
+  }
+
+  .ql-btn-calls {
+    background: #fff !important;
+    border: 1px solid var(--ql-blue) !important;
+    color: var(--ql-blue) !important;
+  }
+
+  .ql-btn-calls:hover {
+    background: #e8f4fc !important;
+  }
+
+  .ql-proposal-link {
+    font-size: 12px !important;
+    font-weight: 600;
+    padding: 0;
+    white-space: normal;
+    text-align: left;
+    color: var(--ql-blue) !important;
+  }
+
+  .ql-action-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .ql-action-btn {
+    width: auto !important;
+    height: auto !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    color: var(--ql-blue) !important;
+    box-shadow: none !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ql-action-btn:hover {
+    color: var(--ql-blue-dark) !important;
+    background: transparent !important;
+  }
+}
+
+.followup-modal-dialog {
+  max-width: 760px;
+  width: 92vw;
+}
+
+.followup-modal-header {
+  background: #1e4b8e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.followup-modal-header .modal-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.followup-modal-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.followup-modal-body {
+  padding: 20px 24px;
+}
+
+.fu-label,
+.fu-field-label {
+  color: #1e4b8e;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 12px 0 8px;
+}
+
+.fu-field-label {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.fu-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.fu-chip {
+  background: #fff;
+  border: 1px solid #188ae2;
+  color: #188ae2;
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.fu-chip:hover {
+  background: #e8f4fc;
+}
+
+.fu-chip.is-active {
+  background: #188ae2;
+  border-color: #188ae2;
+  color: #fff;
+}

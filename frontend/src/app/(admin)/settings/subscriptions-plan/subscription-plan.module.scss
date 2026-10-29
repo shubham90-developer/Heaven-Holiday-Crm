@@ -1,0 +1,144 @@
+.card {
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+}
+
+.pageTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 32px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #6b7280;
+
+  b {
+    color: #111827;
+    font-weight: 600;
+  }
+}
+
+.planBadge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 12px;
+}
+
+.sectionTitleAccent {
+  composes: sectionTitle;
+  color: var(--bs-primary, #2563eb);
+  margin: 0;
+}
+
+.feeRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-size: 13px;
+  color: #374151;
+
+  strong {
+    color: #111827;
+  }
+}
+
+.table {
+  margin: 0;
+
+  th {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #6b7280;
+    background: #f9fafb;
+    white-space: nowrap;
+    padding: 10px 8px;
+  }
+
+  td {
+    font-size: 12px;
+    padding: 9px 8px;
+    color: #1f2937;
+  }
+}
+
+.num {
+  text-align: center;
+}
+
+.numLink {
+  color: var(--bs-primary, #2563eb);
+  font-weight: 500;
+}
+
+.totalRow td {
+  font-weight: 700;
+  background: #f3f4f6;
+}
+
+.filterSelect {
+  min-width: 140px;
+  font-size: 12px;
+}
+
+.usageCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.usageHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--bs-primary, #2563eb);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.usageRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #f9fafb;
+  font-size: 12px;
+  color: #374151;
+
+  & + & {
+    margin-top: 6px;
+  }
+}
+
+.usageTotal {
+  composes: usageRow;
+  margin-top: 10px !important;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  font-weight: 700;
+  color: #111827;
+}
